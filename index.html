@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="photos/logo tst.webp">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap" rel="stylesheet">
 		<title>Spandan '23</title>
 		<style>
 			* {
@@ -15,7 +16,7 @@
 	font-family: lato;
 	scroll-behavior: smooth;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap');
 @font-face {
 	font-family: lato;
 	src: url(photos/Lato/Lato-Regular.ttf);
@@ -110,6 +111,34 @@
 	font-size: 50px;
 	margin: 30px 0;
 }
+.heroHeading1 {
+	color: white;
+	font-size: 50px;
+	margin: 30px 0;
+	animation-name: head;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes head {
+	0%{
+		font-size: 50px;
+		font-family: 'Fredericka the Great', cursive;
+	}
+	33%{
+		font-size: 56px;
+		font-family: 'Bahiana', cursive;
+	}
+	66%{
+		font-size: 62px;
+		font-family: 'Boogaloo', cursive;
+	}
+	100%{
+		font-size: 68px;
+		font-family: 'Megrim', cursive;
+	}
+
+}
 .heroHeading2 {
 
 	color: white;
@@ -124,7 +153,7 @@
 
 .heroText {
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	margin: 30px 0;
 }
@@ -164,7 +193,7 @@
 }
 
 #fineArts {
-	background-image: url(photos/Bob-ross.webp);
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(photos/Bob-ross.webp);
 }
 
 #photography{
@@ -251,7 +280,25 @@
 	width: 40%;
 	height: 20%;
 }
+@keyframes head {
+	0%{
+		font-size: 30px;
+		font-family: 'Fredericka the Great', cursive;
+	}
+	33%{
+		font-size: 56px;
+		font-family: 'Bahiana', cursive;
+	}
+	66%{
+		font-size: 62px;
+		font-family: 'Boogaloo', cursive;
+	}
+	100%{
+		font-size: 68px;
+		font-family: 'Megrim', cursive;
+	}
 
+}
 }
 		</style>
 	</head>
@@ -275,7 +322,7 @@
 		</header>
 		<div class="hero" id="timeTravel">
 			<h1 class="heroHeading2"><img src="photos/xie-mumbai-logo.webp" alt="" class="xielogo"> Xavier Institute Of Engineering presents</h1>
-			<h2 class="heroHeading">LOST IN TIME</h2>
+			<h2 class="heroHeading1">LOST IN TIME</h2>
 			<div class="heroText1">at</div><br>
 			<img src="photos/logoinvert.webp" alt="" class="sec1logo">
 			<div class="heroText">
