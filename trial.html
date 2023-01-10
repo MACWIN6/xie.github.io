@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="photos/logo tst.png">
+		<link rel="icon" type="image/png" href="photos/logo tst.webp">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap" rel="stylesheet">
 		<title>Spandan '23</title>
 		<style>
 			* {
@@ -12,10 +13,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	list-style: none;
-	
+	font-family: lato;
 	scroll-behavior: smooth;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap');
 @font-face {
 	font-family: lato;
 	src: url(photos/Lato/Lato-Regular.ttf);
@@ -39,9 +40,13 @@
 	margin-left: 10px;
 	font-size: 25px;
 }
+.xielogo{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
 
 .headNav {
-	font-family: lato;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -91,7 +96,6 @@
 }
 
 .hero {
-	
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -101,35 +105,57 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.heroHeading1 {
-	animation-name: head;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	color: white;
-	font-size: 50px;
-	margin: 30px 0;
-}
-@keyframes head{
-        0% { font-size: 50px;}
-		100%{
-            font-size: 70px;
-			font-family: lato;
-		}
-	}
+
 .heroHeading {
 	color: white;
 	font-size: 50px;
 	margin: 30px 0;
-	font-family: lato;
+}
+.heroHeading1 {
+	color: white;
+	font-size: 50px;
+	margin: 30px 0;
+	animation-name: head;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes head {
+	0%{
+		
+		font-family: 'Fredericka the Great', cursive;
+	}
+	33%{
+		
+		font-family: 'Bahiana', cursive;
+	}
+	66%{
+		
+		font-family: 'Boogaloo', cursive;
+	}
+	100%{
+		
+		font-family: 'Megrim', cursive;
+	}
+
+}
+.heroHeading2 {
+
+	color: white;
+	
+}
+
+.headLink{
+	
+	text-decoration: none;
+	color: #ff4437;
 }
 
 .heroText {
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	margin: 30px 0;
-	font-family: lato;
 }
 
 .heroText1{
@@ -137,11 +163,9 @@
 	font-size: 50px;
 	text-align: center;
 	margin: 30px 0;
-	font-family: lato;
 }
 
 .scheduleBtn {
-	font-family: lato;
 	cursor: pointer;
 	text-decoration: none;
 	color: white;
@@ -162,22 +186,27 @@
 
 #timeTravel {
 	background-image: url(photos/sec1.webp);
+	background-size: contain;
 }
 
 #performingArts {
 	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(photos/livethebeatles.webp);
+	background-size: contain;
 }
 
 #fineArts {
-	background-image: url(photos/Bobross.webp);
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(photos/Bob-ross.webp);
+	background-size: contain;
 }
 
 #photography{
 	background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.6)),url(photos/photohome.webp);
+	background-size: contain;
 }
 
 #formal{
-	background-image: url(photos/wormhole.jpg);
+	background-image: url(photos/formalhome.webp);
+	background-size: contain;
 
 }
 .foot {
@@ -279,9 +308,13 @@
 			</label>
 		</header>
 		<div class="hero" id="timeTravel">
+			<h1 class="heroHeading2"><img src="photos/xie-mumbai-logo.webp" alt="" class="xielogo"> Xavier Institute Of Engineering presents</h1>
 			<h2 class="heroHeading1">LOST IN TIME</h2>
 			<div class="heroText1">at</div><br>
-			<img src="photos/logo tst.png" alt="" class="sec1logo">
+			<img src="photos/logoinvert.webp" alt="" class="sec1logo">
+			<div class="heroText">
+				Also check out out Technical Fest,<br> <u> <a href="transhome.html" class="headLink">TRANSMISSION</a> </u>
+			</div>
 			
 		</div>
 		<div class="hero" id="performingArts">
@@ -289,31 +322,31 @@
 			<div class="heroText">
 				Come be a part of the most mesmerizing<br /> dance and musical performances!
 			</div>
-			<a href="performarts.html" class="scheduleBtn">Check Schedule</a>
+			<a href="performarts.html" class="scheduleBtn">Check Events</a>
 		</div>
 		<div class="hero" id="fineArts">
-			<h2 class="heroHeading">Fine Arts &<br> Literary</h2>
+			<h2 class="heroHeading">Fine Arts & Literary</h2>
 			<div class="heroText">
 				Experience a treat to your eyes, and quench your <br />
 				soul's thirst for exquisite art.
 			</div>
-			<a href="finearts.html" class="scheduleBtn">Check Schedule</a>
+			<a href="finearts.html" class="scheduleBtn">Check Events</a>
 		</div>
 		<div class="hero" id="formal">
-			<h2 class="heroHeading">Formal and <br> Informals</h2>
+			<h2 class="heroHeading">Formal and Informals</h2>
 			<div class="heroText">
 				Lorem ipsum dolor sit amet consectetur, adipisicing. <br />
 				Lorem ipsum dolor sitt.
 		    </div>
-			<a href="formals.html" class="scheduleBtn">Check Schedule</a>
+			<a href="formals.html" class="scheduleBtn">Check Events</a>
 		</div>
 		<div class="hero" id="photography">
-			<h2 class="heroHeading">Photo & <br> Videography</h2>
+			<h2 class="heroHeading">Photography & Videography</h2>
 			<div class="heroText">
 				Lorem ipsum dolor sit amet consectetur upism.<br />
 				Lorem ipsum dolor sitt.
 		    </div>
-			<a href="photography.html" class="scheduleBtn">Check Schedule</a>
+			<a href="photography.html" class="scheduleBtn">Check Events</a>
 		</div>
 		<div class="foot">
 			<a class="copyright" href="#">&copy; 2022 | XieFest</a>

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="photos/logo tst.webp">
+		<link rel="icon" type="image/png" href="photos/translogo.webp">
 		<title>Spandan '23</title>
 		<style>
 			* {
@@ -34,10 +34,22 @@
 }
 
 .logo {
-	color: #3772ff;
+	color: #ff4437;
 	font-weight: bold;
 	margin-left: 10px;
 	font-size: 25px;
+}
+.xielogo{
+	width: 75px;
+	height: 55px;
+
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .headNav {
@@ -72,7 +84,7 @@
 }
 
 .navLinks:hover {
-	color: #3772ff;
+	color: #ff4437;
 }
 
 .icon-burger {
@@ -106,6 +118,20 @@
 	color: white;
 	font-size: 50px;
 	margin: 30px 0;
+    text-decoration: underline;
+}
+.heroHeading1 {
+	color: white;
+	font-size: 27px;
+	margin: 30px 0;
+}
+.heroHeading2 {
+	color: white;
+	font-size: 30px;
+	margin: 30px 0;
+    text-decoration: underline;
+    padding: 20px;
+
 }
 
 .heroText {
@@ -115,36 +141,12 @@
 	margin: 30px 0;
 }
 
-.scheduleBtn {
-	cursor: pointer;
-	text-decoration: none;
-	color: white;
-	background-color: black;
-	font-size: 25px;
-	border-bottom: 4px solid white;
-	border-right: 4px solid white;
-	padding: 20px 45px;
-	transition: 0.25s;
+
+
+#contacts {
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(photos/contact.webp);
 }
 
-.scheduleBtn:hover {
-	color: black;
-	background: white;
-	border-right: 4px solid black;
-	border-bottom: 4px solid black;
-}
-
-#drama {
-	background-image: url(photos/drama.webp);
-}
-
-#dance {
-	background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(photos/dance.webp);
-}
-
-#music{
-	background-image: url(photos/music.webp);
-}
 .foot {
 	background-color: black;
 	padding: 0 20px;
@@ -166,6 +168,10 @@
 	width: 15%;
 	height: 30%;
 	border-radius: 50%;
+}
+.headlink{
+    list-style: none;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -228,14 +234,14 @@
 	<body>
 		<header class="headNav">
 			<input id="nav-toggle" type="checkbox" />
-			<div class="logo">SPANDAN 23</div>
+			<div class="logo">TRANSMISSION 23</div>
 			<ul class="links">
-				<li><a href="spandansponsor.html" class="navLinks">Sponsors</a></li>
-				<li><a href="index.html" class="navLinks">Home</a></li>
-				<li><a href="spandanabout.html" class="navLinks">About</a></li>
-				<li><a href="spandancontact.html" class="navLinks">Contact</a></li>
-				<li><a href="pyspandan.html" class="navLinks">PY Spandan</a></li>
-				<li><a href="transhome.html" class="navLinks">Transmission '23</a></li>
+				<li><a href="transponsor.html" class="navLinks">Sponsors</a></li>
+				<li><a href="transhome.html" class="navLinks">Home</a></li>
+				<li><a href="transabout.html" class="navLinks">About</a></li>
+				<li><a href="transcontact.html" class="navLinks">Contact</a></li>
+				<li><a href="pytransmission.html" class="navLinks">PY Transmission</a></li>
+				<li><a href="index.html" class="navLinks">Spandan '23</a></li>
 			</ul>
 			<label for="nav-toggle" class="icon-burger">
 				<div class="line"></div>
@@ -244,40 +250,24 @@
 			</label>
 		</header>
 
-		<div class="hero" id="drama">
-			<h2 class="heroHeading">Drama</h2>
+		<div class="hero" id="contacts">
+			<h2 class="heroHeading">Contact Us</h2>
+            <h2 class="heroHeading1">Contingent Leaders</h2>
 			<div class="heroText">
-				<ul>
-					<li>Duet / Group Acting</li>
-					<li>Andaaz Apna Apna</li>
-					<li>Bol Bachchan</li>
+				<ul class="headlink">
+					<li>Shreya Malvankar: +91 8433914534</li>
+            <li>Aditi Satam: +91 9372099927</li>
+            <li>Nijel Shoby: +91 9167479734</li>
 				</ul>
+                <a href="https://www.instagram.com/spandanfest/" class="anchor"><img src="photos/iglogo.webp" alt="" class="xielogo">@spandanfest</a>
 			</div>
-			<a href="https://linktr.ee/dramaspandan2023" target="_blank" class="scheduleBtn">Register</a>
+            <h2 class="heroHeading2">XAVIER INSTITUTE OF ENGINEERING</h2>
+     <div class="heroText">
+      Opposite S.L.Raheja Hospital, Mahim Causeway, Mahim (W), Raheja Hospital Marg, Mumbai, Maharashtra 400016 
+     </div>
+			
 		</div>
-		<div class="hero" id="dance">
-			<h2 class="heroHeading">Dance</h2>
-			<div class="heroText">
-				<ul>
-					<li>Solo Dance</li>
-					<li>Duo Dance</li>
-					<li>Group Dance</li>
-				</ul>
-			</div>
-			<a href="https://linktr.ee/Dancespandan23" target="_blank" class="scheduleBtn">Register</a>
-		</div>
-		<div class="hero" id="music">
-			<h2 class="heroHeading">Music</h2>
-			<div class="heroText">
-				<ul>
-					<li>Solo Singing</li>
-					<li>Rap Contest</li>
-					<li>Instrumental</li>
-					<li>Battle of Bands</li>
-				</ul>
-		    </div>
-			<a href="https://linktr.ee/Music_Spandan_23" target="_blank" class="scheduleBtn">Register</a>
-		</div>
+
 	
 		<div class="foot">
 			<a class="copyright" href="#">&copy; 2022 | XieFest</a>
