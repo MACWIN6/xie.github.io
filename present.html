@@ -5,19 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="photos/translogo.webp">
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap" rel="stylesheet">
-		
 		<title>Transmission '23</title>
 		<style>
 			* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	list-style: none;
+	
 	font-family: lato;
 	scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Boogaloo&family=Fredericka+the+Great&family=Megrim&display=swap');
 
 @font-face {
 	font-family: lato;
@@ -42,11 +39,6 @@
 	margin-left: 10px;
 	font-size: 25px;
 }
-.xielogo{
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-}
 
 .headNav {
 	display: flex;
@@ -58,6 +50,7 @@
 	position: sticky;
 	top: 0;
 	padding: 0 20px;
+	list-style: none;
 }
 
 #nav-toggle {
@@ -68,6 +61,7 @@
 .links {
 	display: flex;
 	justify-content: space-around;
+	list-style: none;
 }
 
 .navLinks {
@@ -113,56 +107,10 @@
 	font-size: 50px;
 	margin: 30px 0;
 }
-.heroHeading1 {
-	color: white;
-	font-size: 50px;
-	margin: 30px 0;
-	animation-name: head;
-	animation-duration: 8s;
-    animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-}
-@keyframes head {
-	0%{
-		
-		font-family: 'Fredericka the Great', cursive;
-	}
-	33%{
-		
-		font-family: 'Bahiana', cursive;
-	}
-	66%{
-	
-		font-family: 'Boogaloo', cursive;
-	}
-	100%{
-	
-		font-family: 'Megrim', cursive;
-	}
-
-}
-.heroHeading2 {
-
-	color: rgb(255, 255, 255);
-	
-}
-
-.headLink{
-	
-	text-decoration: none;
-	color: #e53516;
-}
 
 .heroText {
 	color: white;
 	font-size: 20px;
-	text-align: center;
-	margin: 30px 0;
-}
-
-.heroText1{
-	color: white;
-	font-size: 50px;
 	text-align: center;
 	margin: 30px 0;
 }
@@ -186,34 +134,13 @@
 	border-bottom: 4px solid black;
 }
 
-#tranhome {
-	background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(photos/trans.webp);
+#emerge {
+    background-image: url(photos/emerging.webp);
+}
+#present {
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(photos/shark\ tank.webp);
 }
 
-#software {
-	background-image:url(photos/softhome.webp);
-}
-
-#lan {
-	background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(photos/lanhome.webp);
-}
-
-#fun {
-	background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(photos/fun.webp);
-}
-
-#emerging{
-	background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(photos/drone.webp);
-}
-
-#presenta{
-	background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(photos/present.webp);
-}
-
-#hardware{
-	background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(photos/road\ run.webp);
-
-}
 .foot {
 	background-color: black;
 	padding: 0 20px;
@@ -289,10 +216,8 @@
 	.sec1logo{
 	width: 40%;
 	height: 20%;
-	}
-.heroHeading1{
-	font-size: 40px;
 }
+
 }
 		</style>
 	</head>
@@ -314,58 +239,21 @@
 				<div class="line"></div>
 			</label>
 		</header>
-		<div class="hero" id="tranhome">
-			<h1 class="heroHeading2"><img src="photos/xie-mumbai-logo.webp" alt="" class="xielogo"> Xavier Institute Of Engineering Presents</h1>
-			<h2 class="heroHeading1">LOST IN TIME</h2>
-			<div class="heroText1">at</div><br>
-			<img src="photos/translogo.webp" alt="" class="sec1logo">
-			<div class="heroText">
-				Also check out out Cultural Fest,<br> <u> <a href="index.html" class="headLink">SPANDAN</a> </u>
-			</div>
-			
-		</div>
-		<div class="hero" id="software">
-			<h2 class="heroHeading">Software</h2>
-			<div class="heroText">
-				From set up, to execution, to tear down.
-			</div>
-			<a href="software.html" class="scheduleBtn">Check Events</a>
-		</div>
-		<div class="hero" id="lan">
-			<h2 class="heroHeading">LAN</h2>
-			<div class="heroText">
-				Spent one too many hours gaming? This is your chance <br> to win something out of it!
-			</div>
-			<a href="lan.html" class="scheduleBtn">Check Events</a>
-		</div>
-		<div class="hero" id="fun">
-			<h2 class="heroHeading">Fun</h2>
-			<div class="heroText">
-				Games that require zero skill, but provide total fun!
-		    </div>
-			<a href="fun.html" class="scheduleBtn">Check Events</a>
-		</div>
-		<div class="hero" id="emerging">
-			<h2 class="heroHeading">Emerging Tech</h2>
-			<div class="heroText">
-				There's drones and VR, what more do you need!?
-		    </div>
-			<a href="emerging.html" class="scheduleBtn">Check Events</a>
-		</div>
-		<div class="hero" id="presenta">
+
+        <div class="hero" id="present">
 			<h2 class="heroHeading">Presentation</h2>
 			<div class="heroText">
-				Present your skills to us, pun intended ;)
-		    </div>
-			<a href="present.html" class="scheduleBtn">Check Events</a>
+				<ul>
+					<li>Paper Presentation</li>
+                    <li>Shark Tank</li>
+					<li>Group Discussion</li>
+					<li>Technical Seminar and Workshop</li>
+				</ul>
+			</div>
+			<a href="https://linktr.ee/technicalpresentation" target="_blank" class="scheduleBtn">Register</a>
 		</div>
-		<div class="hero" id="hardware">
-			<h2 class="heroHeading">Hardware Robotics</h2>
-			<div class="heroText">
-				Be a genius and a pilot with exciting quizzes and races.
-		    </div>
-			<a href="hardware.html" class="scheduleBtn">Check Events</a>
-		</div>
+
+	
 		<div class="foot">
 			<a class="copyright" href="#">&copy; 2023 | XieFest</a>
 		</div>
